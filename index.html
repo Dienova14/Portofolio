@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Alvito Dienova Portofolio</title>
     <link rel="icon" href="profile.png" type="image/png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="coba.css">
     <script src="https://kit.fontawesome.com/e9674358a7.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +19,12 @@
 </head>
 
 <body>
+    <div class="whatsapp-button">
+        <a href="https://wa.me/6281292311422" target="_blank">
+            <img src="whatsapp.png" alt="WhatsApp" />
+        </a>
+    </div>
+
     <section id="header">
         <div class="container">
             <nav>
@@ -150,27 +156,26 @@
                             </p>
                             <div class="card-footer">
                                 <span class="card-author">by Alvito Dienova</span>
-                                <span class="card-date">14 Jul 2024</span>
+                                <span class="card-date">1 Jan 2025</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-        
+                        
                 <!-- Card 2 -->
                 <div class="col-md-4 mb-4 d-flex justify-content-center">
                     <div class="card">
                         <img src="Detik.png" class="card-img-top" alt="Website Reports">
                         
                         <!-- Ikon Read More di pojok kanan atas -->
-                        <a href="#" class="read-more" data-title="Detik Test" data-description="Analyze and create dashboard for Detik News Test">
+                        <a href="#" class="read-more" data-title="Detik Test" data-description="In the data analysis test from *detik.com*, I explored and processed the given dataset to identify patterns and provide insights relevant to decision-making. Using statistical techniques and data visualization, I analyzed trends and relationships between variables. This process involved data cleaning, processing with Python and Tableau, and interpreting the results to produce an informative, data-driven report. From this analysis, I presented key findings and recommendations that could be utilized for business strategy or content development at *detik.com*, demonstrating my skills in data analysis and insightful reporting." summary="Analyze and report website performance using:">
                             <i class="fas fa-arrow-right"></i> <!-- Ikon FontAwesome -->
                         </a>
                 
                         <div class="card-body text-center">
                             <h5 class="card-title">Detik Reports</h5>
                             <p class="card-text">
-                                Analyze and report website performance with Google Search Console, Clicky, Tableau tools
+                                In the data analysis test from detik.com, I explored and processed the given dataset to identify patterns and provide insights relevant  
                             </p>
                             <div class="card-footer">
                                 <span class="card-author">by Alvito Dienova</span>
@@ -300,6 +305,7 @@
                 </div>
                 
             </div>
+            
         </div>
     </section>
 
@@ -381,6 +387,15 @@
                 openPopup(title, description, summary);
             });
         });
+    </script>
+
+    <script>
+        function openBar() {
+            document.getElementById("bar").style.right = "0";
+        }
+        function closeBar() {
+            document.getElementById("bar").style.right = "-250px";
+        }
     </script>
 </body>
 

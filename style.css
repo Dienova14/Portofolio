@@ -24,7 +24,7 @@ html {
 .container {
     width: 100%;
     margin: 0; /* Pusatkan container */
-    padding: 0; /* Tambahkan padding agar tidak terlalu sempit */
+    padding: 10px; /* Tambahkan padding agar tidak terlalu sempit */
 }
 
 /* Navigation */
@@ -723,6 +723,8 @@ nav .fa-solid {
     }
 }
 
+
+
 /* Contact Section */
 #contact {
     width: 100%;
@@ -753,17 +755,54 @@ nav .fa-solid {
     display: inline-block;
 }
 
-/* Responsive Navigation */
-@media (max-width: 700px) {
-    .nama {
-        font-size: 15px;
-    }
+/* CSS untuk Pop-out WhatsApp Button */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
 
-    .header-text {
-        font-size: 15px;
+.whatsapp-button a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #25D366;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.whatsapp-button a:hover {
+    background-color: #128C7E;
+    transform: scale(1.1);
+}
+
+.whatsapp-button img {
+    width: 50px;
+    height: 50px;
+}
+
+
+/* Responsive About Navigation */
+@media (max-width: 760px) {
+    #about{
+        padding: 0px 10px;
+        height: auto;
+    }
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 760px;
+        width: 100%;
+        height: auto;
     }
 
     .about1, .about2 {
+        padding-top: 20px;
         flex-basis: 100%;
         text-align: center;
     }
@@ -771,14 +810,76 @@ nav .fa-solid {
     .about1 img {
         width: 120px;
         height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
     }
 
-    nav .fa-solid {
-        display: block;
+    .layer {
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background: linear-gradient(rgba(0,0,0,0.6), pink);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        font-size: 15px;
+        opacity: 0; /* Default tidak terlihat */
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    .layer h3{
+        font-size: 10px;
+    }
+
+    .about2 {
+        padding: 10px;
+    }
+
+    .about2 .sub-title {
         font-size: 20px;
-        cursor: pointer;
+        font-weight: bold;
     }
 
+    .about2 p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .tab-titles {
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+    }
+
+    .tab-links {
+        cursor: pointer;
+        font-weight: bold;
+        margin-right: 90px;
+    }
+
+    .tab-contents {
+        display: none;
+    }
+
+    .tab-contents.active-tab {
+        display: block;
+    }
+
+    .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .skills-container li {
+        font-size: 14px;
+    }
+
+    /* Mobile Menu Styles */
     nav ul {
         background-color: #FF69B4;
         position: fixed;
@@ -803,5 +904,101 @@ nav .fa-solid {
         position: absolute;
         top: 25px;
         left: 25px;
+    }
+
+    nav .fa-solid {
+        display: block;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
+
+/* Responsive Project */
+@media (max-width: 768px) {
+    #project {
+        padding: 20px;
+    }
+
+    .container-project {
+        padding: 15px;
+        height: auto; /* Allow height to adjust for mobile */
+    }
+
+    /* Project Title */
+    .myproject {
+        font-size: 28px;
+        margin-bottom: 20px !important;
+    }
+
+    /* Project Image */
+    .project-img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    /* Project Description */
+    .project-description {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    /* Carousel controls */
+    .carousel-control-prev, .carousel-control-next {
+        width: 40px;
+        height: 40px;
+        transform: translateY(0);
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Adjust carousel item */
+    .carousel-item {
+        flex-direction: column;
+    }
+
+    .project-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Description text */
+    .project-description p {
+        font-size: 16px;
+        flex-wrap: wrap;
+    }
+
+    .project-description ul li {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+}
+
+/* Responsive Proyek */
+@media (max-width: 768px) {
+    #proyek{
+        height: auto;
+    }
+    .mypro {
+        font-size: 28px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: none;
+        margin-bottom: 20px;
+        border-radius: 12px;
+    }
+
+    .card-img-top {
+        height: 150px;
+    }
+
+    .card-body {
+        min-height: 130px;
     }
 }
