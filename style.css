@@ -260,6 +260,31 @@ nav .fa-solid {
     margin: 3px 0;
 }
 
+.cv-item{
+    padding-top: 10px;
+}
+
+.download-btn {
+    display: inline-block;
+    background-color: transparent;
+    border: 1px solid #ff3385;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(255, 105, 180, 0.4);
+}
+
+.download-btn:hover {
+    transform: scale(1.05);
+    color: #ccc;
+    box-shadow: 0px 8px 16px rgba(255, 105, 180, 0.4);
+}
+
+
 
 /* Project & Experience Sections */
 #project {
@@ -725,34 +750,39 @@ nav .fa-solid {
 
 
 
-/* Contact Section */
-#contact {
+/* Footer Section */
+#footer {
     width: 100%;
+    padding: 20px 0;
+    background-color: #111;
+    color: #fff;
     text-align: center;
-    padding: 30px 0;
-    background-color: black;
 }
 
-.myContact p {
-    margin-top: 10px;
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
-.myContact p i {
-    color: pink;
-    margin-right: 10px;
-    font-size: 17px;
+.footer-text {
+    font-size: 16px;
+    color: #ccc;
+    margin: 0;
 }
 
-.social-icons {
-    margin-top: 20px;
-}
-
-.social-icons a {
+.footer-text a {
+    color: #fff;
     text-decoration: none;
-    font-size: 17px;
-    margin-right: 17px;
-    color: pink;
-    display: inline-block;
+}
+
+.footer-content i{
+    transition: transform 0.3s ease;
+}
+
+.footer-content i:hover{
+    transform: scale(1.2);
 }
 
 /* CSS untuk Pop-out WhatsApp Button */
