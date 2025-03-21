@@ -32,11 +32,10 @@
                     <span>Alvito</span> Dienova
                 </p>
                 <ul id="bar">
-                    <li><a href="#header" class="active-links">Home</a></li>
+                    <li><a href="#" class="active-links">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#project">Experience</a></li>
                     <li><a href="#proyek">Project</a></li>
-                    <li><a href="#contact">Contact</a></li>
                     <i class="fa-solid fa-x" onclick="closeBar()"></i>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openBar()"></i>
@@ -62,6 +61,7 @@
                     <div class="tab-titles">
                         <p class="tab-links active-links" onclick="openLinks('Education')">Education</p>
                         <p class="tab-links " onclick="openLinks('Skills')">Skills</p>
+                        <p class="tab-links " onclick="openLinks('cv')">Download CV</p>
                     </div>
                     <div class="tab-contents active-tab" id="Education">
                         <div class="education-item">
@@ -80,7 +80,13 @@
                             <li><i class="fa-solid fa-chart-line"></i> Tableau</li>
                             <li><i class="fa-solid fa-brain"></i> Machine Learning</li>
                         </ul>
-                    </div>                  
+                    </div>
+                    
+                    <div class="tab-contents " id="cv">
+                        <div class="cv-item">
+                            <a href="CV - AlvitoDienova.pdf" download class="download-btn">Download CV</a>
+                        </div>
+                    </div>
                     
                 </div>
             </div>
@@ -305,24 +311,21 @@
                 </div>
                 
             </div>
-            
+
         </div>
     </section>
 
-    <section id="contact">
+    <section id="footer">
         <div class="container1">
-            <div class="myContact">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-envelope"></i>dienovalvito@gmail.com</p>
-                <p><i class="fa-solid fa-phone"></i>081292311422</p>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/dienovaa14?igsh=MTFtOTRmeHA1MTVkeA=="><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
-                </div>
+            <div class="footer-content">
+                <p class="footer-text">Alvito Dienova Website &copy; 2025</p>
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/dienovaa14?igsh=MTFtOTRmeHA1MTVkeA=="><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/dienova"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:dienovalvito@gmail.com"><i class="fa-regular fa-envelope"></i></a>
             </div>
         </div>
-    </section>
+    </section>        
 
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
