@@ -1,4 +1,3 @@
-/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +10,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Header */
 #header {
     width: 100%;
     height: 100vh;
@@ -23,13 +21,12 @@ html {
 
 .container {
     width: 100%;
-    margin: 0; /* Pusatkan container */
-    padding: 10px; /* Tambahkan padding agar tidak terlalu sempit */
+    margin: 0;
+    padding: 10px;
 }
 
-/* Navigation */
 nav {
-    position: absolute; /* Pastikan navbar tetap di bagian atas */
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -41,7 +38,6 @@ nav {
     z-index: 1000;
     margin-top: 14px;
 }
-
 
 .nama {
     font-size: 25px;
@@ -75,7 +71,6 @@ nav .fa-solid {
     display: none;
 }
 
-/* Header Text */
 .header-text {
     font-family: cursive;
     text-align: center;
@@ -90,9 +85,8 @@ nav .fa-solid {
     font-family: cursive;
 }
 
-/* About Section */
 #about {
-    padding: 0px 4%; /* Lebihkan ruang kanan-kiri */
+    padding: 0px 4%;
     background-color: #2B2B2B;
     display: flex;
     justify-content: center;
@@ -109,9 +103,8 @@ nav .fa-solid {
     height: 100vh;
 }
 
-/* Profile Image */
 .about1 {
-    flex-basis: 35%; /* Atur agar gambar tidak terlalu besar */
+    flex-basis: 35%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,19 +112,18 @@ nav .fa-solid {
 }
 
 .about1 img {
-    width: 300px;  /* Ukuran yang lebih pas */
+    width: 300px;
     height: 300px;
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 2px 6px rgba(255, 105, 180, 0.3);
 }
 
-/* Layer Overlay */
 .layer {
     position: absolute;
-    width: 300px; /* Sama dengan gambar */
-    height: 300px; /* Sama dengan gambar */
-    border-radius: 50%; /* Pastikan bentuknya bulat */
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
     background: linear-gradient(rgba(0,0,0,0.6), pink);
     display: flex;
     align-items: center;
@@ -139,15 +131,14 @@ nav .fa-solid {
     flex-direction: column;
     text-align: center;
     font-size: 15px;
-    opacity: 0; /* Default tidak terlihat */
+    opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
 
 .about1:hover .layer {
-    opacity: 1; /* Layer muncul saat hover */
+    opacity: 1;
 }
 
-/* About Text */
 .about2 {
     flex-basis: 60%;
 }
@@ -166,7 +157,6 @@ nav .fa-solid {
     font-family: cursive;
 }
 
-/* Tabs */
 .tab-titles {
     display: flex;
     margin: 20px 0 0px;
@@ -222,8 +212,8 @@ nav .fa-solid {
 
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 kolom */
-    gap: 20px; /* Jarak antar skill */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     padding: 0;
     margin-top: 10px;
     text-align: left;
@@ -233,25 +223,25 @@ nav .fa-solid {
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 10px; /* Jarak antara ikon dan teks */
-    font-size: 15px; /* Ukuran teks */
+    gap: 10px;
+    font-size: 15px;
     color: #ffffff;
 }
 
 .skills-container li i {
-    font-size: 20px; /* Perbesar ikon */
-    color: #ff7b72; /* Warna ikon, bisa diubah */
+    font-size: 20px;
+    color: #ff7b72;
 }
 .education-item {
-    text-align: left;  /* Rata kiri agar lebih profesional */
-    margin-bottom: 10px; /* Beri jarak antar elemen */
+    text-align: left;
+    margin-bottom: 10px;
 }
 
 .education-item h4 {
     margin-top: 10px;
     font-size: 16px;
     font-weight: bold;
-    color: pink; /* Warna teks tahun */
+    color: pink;
     margin-bottom: 5px;
 }
 
@@ -285,9 +275,6 @@ nav .fa-solid {
     box-shadow: 0px 8px 16px rgba(255, 105, 180, 0.4);
 }
 
-
-
-/* Project & Experience Sections */
 #project {
     background: #0A0A0A;
     height: 100vh;
@@ -298,7 +285,6 @@ nav .fa-solid {
     text-align: center;
 }
 
-/* Header Project */
 .myproject {
     font-size: 38px;
     font-weight: bold;
@@ -307,7 +293,6 @@ nav .fa-solid {
     margin-bottom: 20px;
 }
 
-/* Container Project */
 .container-project {
     width: 100%;
     max-width: 1150px;
@@ -322,7 +307,6 @@ nav .fa-solid {
     justify-content: center;
 }
 
-/* Carousel */
 #projectCarousel {
     width: 100%;
     position: relative;
@@ -335,7 +319,6 @@ nav .fa-solid {
     justify-content: center;
 }
 
-/* Project Container */
 .project-container {
     display: flex;
     align-items: center;
@@ -344,7 +327,6 @@ nav .fa-solid {
     gap: 50px;
 }
 
-/* Gambar Project */
 .project-img {
     width: 100%;
     max-width: 400px;
@@ -359,7 +341,6 @@ nav .fa-solid {
     transform: scale(1.05);
 }
 
-/* Deskripsi Project */
 .project-description {
     width: 100%;
     max-width: 600px;
@@ -375,21 +356,19 @@ nav .fa-solid {
     box-shadow: 0 2px 6px rgba(255, 105, 180, 0.3);
 }
 
-/* Judul Deskripsi */
 .project-description p {
     font-size: 20px;
     font-weight: bold;
-    display: flex; /* Gunakan flexbox */
-    justify-content: space-between; /* Nama PT ke kiri, span ke kanan */
-    align-items: center; /* Supaya sejajar secara vertikal */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Styling untuk span agar lebih kecil & tetap di kanan */
 .project-description p span {
     font-size: 12px;
     font-weight: bold;
     text-align: right;
-    color: rgb(230, 230, 230); /* Opsional: Warna teks lebih soft */
+    color: rgb(230, 230, 230);
 }
 
 .project-description ul li{
@@ -399,31 +378,27 @@ nav .fa-solid {
     text-align: justify;
 }
 
-/* Hover Effect */
 .project-description:hover {
     background: rgba(255, 255, 255, 0.3);
 }
 
-/* Mengatur posisi tombol navigasi carousel */
 .carousel-control-prev,
 .carousel-control-next{
     position: absolute;
-    transform: translateY(130%); /* Supaya benar-benar di tengah */
+    transform: translateY(130%);
     width: 20px !important;
     height: 100px;
-    background: none; /* Menghapus latar belakang tombol */
+    background: none;
     border: none;
-    z-index: 10; /* Pastikan tombol berada di atas elemen lain */
+    z-index: 10;
 }
 
-/* Tombol prev di pojok tengah kiri */
 .carousel-control-prev {
-    left: -17px !important; /* Sesuaikan dengan kebutuhan */
+    left: -17px !important;
 }
 
-/* Tombol next di pojok tengah kanan */
 .carousel-control-next {
-    right: -17px !important; /* Sesuaikan dengan kebutuhan */
+    right: -17px !important;
 }
 
 .carousel-control-prev-icon,
@@ -435,14 +410,14 @@ nav .fa-solid {
 
 #proyek {
     padding: 30px 0;
-    background: #141414; /* Warna tema gelap */
+    background: #141414;
     height: 150vh;
 }
 
 .mypro {
     font-size: 32px;
     font-weight: bold;
-    color: #ff69b4; /* Warna pink */
+    color: #ff69b4;
     margin-bottom: 30px;
     text-align: center;
     font-family: cursive;
@@ -451,11 +426,11 @@ nav .fa-solid {
 .card {
     border: none;
     border-radius: 12px;
-    box-shadow: 0px 4px 8px rgba(255, 105, 180, 0.2); /* Shadow pink */
+    box-shadow: 0px 4px 8px rgba(255, 105, 180, 0.2);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     background: #222;
     color: white;
-    width: 18rem; /* Ukuran lebih besar */
+    width: 18rem;
     overflow: hidden;
     opacity: 1;
     transform: translateY(10px);
@@ -467,14 +442,14 @@ nav .fa-solid {
     top: 10px;
     right: 10px;
     color: #ff69b4;
-    font-size: 14px; /* Ukuran ikon lebih kecil */
+    font-size: 14px;
     background: rgba(0, 0, 0, 0.6);
-    padding: 4px; /* Kurangi padding agar ikon tidak terlalu besar */
+    padding: 4px;
     border-radius: 50%;
     transition: background 0.3s ease-in-out;
     text-decoration: none;
     z-index: 10;
-    width: 26px; /* Sesuaikan ukuran lingkaran */
+    width: 26px;
     height: 26px;
     display: flex;
     align-items: center;
@@ -501,9 +476,8 @@ nav .fa-solid {
     }
 }
 
-/* Hover Effect */
 .card:hover {
-    transform: translateY(-5px); /* Mengangkat card saat hover */
+    transform: translateY(-5px);
     box-shadow: 0px 6px 12px rgba(255, 105, 180, 0.4);
 }
 
@@ -526,7 +500,7 @@ nav .fa-solid {
 }
 
 .card-img-top {
-    height: 180px; /* Ukuran lebih proporsional */
+    height: 180px;
     object-fit: cover;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -534,7 +508,7 @@ nav .fa-solid {
 }
 
 .card:hover .card-img-top {
-    transform: scale(1.1); /* Zoom in efek */
+    transform: scale(1.1);
 }
 
 .card-body {
@@ -548,7 +522,7 @@ nav .fa-solid {
 
 .card-footer {
     display: flex;
-    justify-content: space-between; /* Membuat teks kiri dan kanan sejajar */
+    justify-content: space-between;
     align-items: center;
     font-size: 11px;
     color: #0A0A0A;
@@ -558,12 +532,12 @@ nav .fa-solid {
     bottom: 7px;
     left: 10px;
     right: 10px;
-    border-top: none !important; /* Hapus garis pemisah */
+    border-top: none !important;
     padding-top: 5px;
 }
 
 .card-author, .card-date {
-    color: #555; /* Warna abu-abu untuk tampilan lebih soft */
+    color: #555;
 }
 
 
@@ -580,7 +554,7 @@ nav .fa-solid {
 }
 
 .card-body a {
-    color: #0A0A0A; /* Warna default */
+    color: #0A0A0A;
     text-decoration: none;
     font-size: 14.5px;
     transition: color 0.3s ease-in-out;
@@ -590,7 +564,6 @@ nav .fa-solid {
     color: #ff69b4; /* Warna saat hover */
 }
 
-/* Overlay */
 .overlay {
     display: none;
     position: fixed;
@@ -601,11 +574,9 @@ nav .fa-solid {
     z-index: 999;
     background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(3px);
-    z-index: 999;
     transition: opacity 0.3s ease;
 }
 
-/* Popup */
 .popup {
     display: none;
     position: fixed;
@@ -621,6 +592,132 @@ nav .fa-solid {
     padding: 20px;
     z-index: 1000;
     overflow-y: auto;
+}
+
+.popup-content h2 {
+    font-size: 22px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.popup-content p {
+    font-size: 14px;
+}
+
+.popup-content img {
+    width: 80%;
+    object-fit: cover;
+}
+
+.popup-body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 45vh;
+    gap: 40px;
+    padding-top: 20px;
+}
+
+.image-slider {
+    position: relative;
+    width: 50%;
+    height: 70%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-image {
+    width: 100%;
+    height: auto;
+    display: none;
+    object-fit: contain;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.popup-image.active {
+    display: block;
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    padding: 6px;
+    z-index: 10;
+}
+
+.prev-btn {
+    left: 15px;
+}
+
+.next-btn {
+    right: 15px;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    color: #ff69b4;
+}
+
+.popup-text {
+    flex: 1;
+    color: white;
+    padding: 20px;
+    font-size: 13px;
+    text-align: left;
+    transform: translateX(-10%);
+}
+
+.popup-text ul {
+    padding-left: 0;
+    list-style-position: inside;
+    list-style: none;
+}
+
+#popup-description {
+    font-size: 12.8px;
+    text-align: justify;
+    margin-bottom: 5px;
+    padding: 0 40px;
+}
+
+.popup.show {
+    display: block;
+    animation: popupFadeIn 0.4s ease-out forwards;
+}
+
+.overlay.show {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.popup.hide {
+    animation: popupFadeOut 0.4s ease-out forwards;
+}
+
+.overlay.hide {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 @keyframes popupFadeIn {
@@ -645,113 +742,6 @@ nav .fa-solid {
     }
 }
 
-/* Popup showing */
-.popup.show {
-    display: block;
-    animation: popupFadeIn 0.4s ease-out forwards;
-}
-
-/* Overlay showing */
-.overlay.show {
-    display: block;
-    opacity: 1;
-    transition: opacity 0.3s ease-in-out;
-}
-
-/* Popup hiding */
-.popup.hide {
-    animation: popupFadeOut 0.4s ease-out forwards;
-}
-
-/* Overlay hiding */
-.overlay.hide {
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-
-/* Tombol Close */
-.close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    padding: 5px 10px;
-    font-size: 16px;
-    background: red;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-/* Konten Popup */
-.popup-content h2 {
-    font-size: 22px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
-
-.popup-content p{
-    font-size: 14px;
-}
-
-.popup-content img{
-    width: 50%;
-    object-fit: cover;
-}
-
-.popup-body {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    height: 50vh;
-    padding-top: 10px;
-}
-
-/* Gambar */
-.popup-image {
-    width: 100%;
-    border-radius: 8px;
-    height: 100%;
-    transform: translateX(-11%);
-}
-
-/* Teks */
-.popup-text {
-    transform: translateX(-10%);
-    font-size: 13px;
-    text-align: left;
-}
-
-.popup-text ul{
-    padding-left: 0;
-    margin-left: 0;
-    list-style-position: inside;
-    list-style: none;
-    
-}
-
-#popup-description{
-    font-size: 12.8px;
-    text-align: justify;
-    margin-bottom: 5px;
-    padding: 0 40px;
-}
-
-/* Responsif: Stack Vertikal di Mobile */
-@media (max-width: 768px) {
-    .popup-body {
-        flex-direction: column;
-        text-align: center;
-    }
-    .popup-image {
-        width: 100%;
-        max-width: 100%;
-    }
-}
-
-
-
-/* Footer Section */
 #footer {
     width: 100%;
     padding: 20px 0;
@@ -786,7 +776,6 @@ nav .fa-solid {
     transform: scale(1.2);
 }
 
-/* CSS untuk Pop-out WhatsApp Button */
 .whatsapp-button {
     position: fixed;
     bottom: 20px;
@@ -815,8 +804,6 @@ nav .fa-solid {
     height: 50px;
 }
 
-
-/* Responsive About Navigation */
 @media (max-width: 760px) {
     #about{
         padding: 0px 10px;
@@ -857,7 +844,7 @@ nav .fa-solid {
         flex-direction: column;
         text-align: center;
         font-size: 15px;
-        opacity: 0; /* Default tidak terlihat */
+        opacity: 0;
         transition: opacity 0.5s ease-in-out;
     }
 
@@ -910,7 +897,6 @@ nav .fa-solid {
         font-size: 14px;
     }
 
-    /* Mobile Menu Styles */
     nav ul {
         background-color: #FF69B4;
         position: fixed;
@@ -955,26 +941,22 @@ nav .fa-solid {
         height: auto; /* Allow height to adjust for mobile */
     }
 
-    /* Project Title */
     .myproject {
         font-size: 28px;
         margin-bottom: 20px !important;
     }
 
-    /* Project Image */
     .project-img {
         max-width: 100%;
         height: auto;
         border-radius: 8px;
     }
 
-    /* Project Description */
     .project-description {
         padding: 15px;
         font-size: 14px;
     }
 
-    /* Carousel controls */
     .carousel-control-prev, .carousel-control-next {
         width: 40px;
         height: 40px;
@@ -987,7 +969,6 @@ nav .fa-solid {
         height: 30px;
     }
 
-    /* Adjust carousel item */
     .carousel-item {
         flex-direction: column;
     }
@@ -997,7 +978,6 @@ nav .fa-solid {
         gap: 20px;
     }
 
-    /* Description text */
     .project-description p {
         font-size: 16px;
         flex-wrap: wrap;
@@ -1009,7 +989,6 @@ nav .fa-solid {
     }
 }
 
-/* Responsive Proyek */
 @media (max-width: 768px) {
     #proyek{
         height: auto;
@@ -1031,5 +1010,16 @@ nav .fa-solid {
 
     .card-body {
         min-height: 130px;
+    }
+}
+
+@media (max-width: 768px) {
+    .popup-body {
+        flex-direction: column;
+        text-align: center;
+    }
+    .popup-image {
+        width: 100%;
+        max-width: 100%;
     }
 }
