@@ -292,10 +292,17 @@
                         <h2 id="popup-title">Title</h2>
                         <p id="popup-description">Description</p>
                         <div class="popup-body">
-                            <!-- Gambar di Kiri -->
-                            <img src="Indocon.png" class="popup-image" alt="Website Reports">
+                            <!-- Image Slider -->
+                            <div class="image-slider">
+                                <img class="popup-image" alt="Image 1">
+                                <img class="popup-image" alt="Image 2">
+                                <img class="popup-image" alt="Image 3">
+                                <!-- Navigation buttons inside image slider -->
+                                <button class="prev-btn" onclick="prevImage()">&#60;&#60;</button>
+                                <button class="next-btn" onclick="nextImage()">&#62;&#62;</button>
+                            </div>
                 
-                            <!-- Teks di Kanan -->
+                            <!-- Text Content -->
                             <div class="popup-text">
                                 <p id="popup-summary">Summary</p>
                                 <ul>
@@ -309,6 +316,9 @@
                         </div>
                     </div>
                 </div>
+                               
+                
+
                 
             </div>
 
@@ -355,7 +365,6 @@
     </script>
 
     <script>
-        // Fungsi untuk membuka popup dan mengisi data dari card yang diklik
         function openPopup(title, description, summary) {
             document.getElementById("popup-title").innerText = title;
             document.getElementById("popup-description").innerText = description;
@@ -366,24 +375,21 @@
             document.getElementById("popup").classList.add('show');
         }
 
-        // Fungsi untuk menutup popup
         function closePopup() {
             // document.getElementById("popup").style.display = "none";
             // document.getElementById("overlay").style.display = "none";
             document.getElementById("overlay").classList.add("hide");
             document.getElementById("popup").classList.add("hide");
 
-        // Wait for the animation to finish, then hide completely
         setTimeout(function() {
             document.getElementById("overlay").classList.remove("show", "hide");
             document.getElementById("popup").classList.remove("show", "hide");
-        }, 400); // Match the duration of the animation (0.4s)
+        }, 400);
         }
 
-        // Menambahkan event listener ke semua tombol Read More
         document.querySelectorAll(".read-more").forEach(button => {
             button.addEventListener("click", function(event) {
-                event.preventDefault(); // Mencegah reload halaman
+                event.preventDefault();
                 const title = this.getAttribute("data-title");
                 const description = this.getAttribute("data-description");
                 const summary = this.getAttribute("summary");
@@ -399,6 +405,40 @@
         function closeBar() {
             document.getElementById("bar").style.right = "-250px";
         }
+    </script>
+
+    <script>
+    const imagePaths = [
+        'Indocon.png',
+        'Telkom.jpeg',
+        'Murni.jpeg'
+    ];
+
+    const images = document.querySelectorAll('.popup-image');
+    let currentImageIndex = 0;
+
+    images.forEach((img, index) => {
+        img.src = imagePaths[index];
+    });
+
+    function prevImage() {
+        currentImageIndex = (currentImageIndex === 0) ? imagePaths.length - 1 : currentImageIndex - 1;
+        updateSlider();
+    }
+
+    function nextImage() {
+        currentImageIndex = (currentImageIndex === imagePaths.length - 1) ? 0 : currentImageIndex + 1;
+        updateSlider();
+    }
+
+    function updateSlider() {
+        images.forEach((img, index) => {
+            img.style.display = (index === currentImageIndex) ? 'block' : 'none';
+        });
+    }
+
+    updateSlider();
+
     </script>
 </body>
 
